@@ -27,12 +27,9 @@
             </div>
 
             <div class="p-8">
-
                 @php
                 $tasks = isset($tasks) ? $tasks : collect();
                 @endphp
-
-              
                 <form action="{{ route('tasks.store') }}" method="POST" class="mb-8 animate-fade-in">
                     @csrf
                     <div class="flex gap-4">
